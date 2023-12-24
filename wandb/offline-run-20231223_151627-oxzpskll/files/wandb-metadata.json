@@ -1,0 +1,144 @@
+{
+    "os": "Linux-5.15.0-1047-gcp-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-12-23T15:16:27.991127",
+    "startedAt": "2023-12-23T15:16:27.761120",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--output_dir=/home/yz4397/Desktop/Generative_AI/Data/FIne_tune/checkpoint_v1",
+        "--data_dir=/home/yz4397/Desktop/Generative_AI/Data/FIne_tune/front_cams",
+        "--report_to=wandb",
+        "--resolution=512",
+        "--mixed_precision=fp16",
+        "--train_batch_size=1",
+        "--learning_rate=1.25e-05",
+        "--lr_scheduler=constant",
+        "--lr_warmup_steps=0",
+        "--max_train_steps=1000",
+        "--save_n_steps=20",
+        "--vae_b16",
+        "--gradient_checkpointing",
+        "--noise_offset=0.05",
+        "--snr_gamma"
+    ],
+    "state": "running",
+    "program": "fine_tune.py",
+    "codePathLocal": "fine_tune.py",
+    "codePath": "fine_tune.py",
+    "git": {
+        "remote": "https://github.com/hotshotco/Hotshot-XL.git",
+        "commit": "cc01f7f82acff985a45f6214152c4a0ba033759f"
+    },
+    "email": null,
+    "root": "/home/yz4397/Desktop/Generative_AI/Hotshot-XL",
+    "host": "instance-1",
+    "username": "yz4397",
+    "executable": "/home/yz4397/v_env/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2000.198,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.198,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 484.4000587463379,
+            "used": 454.2697067260742
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 14.032539367675781
+    }
+}

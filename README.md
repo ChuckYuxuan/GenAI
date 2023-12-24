@@ -1,23 +1,24 @@
-<h1 align="center"><img src="https://i.imgur.com/HsWXQTW.png" width="24px" alt="logo" /> Hotshot-XL</h1>
+### Acknowledgments
 
-<h1 align="center">
-  <a href="https://www.hotshot.co">🌐 Try it</a>
-  &nbsp;
-  <a href="https://huggingface.co/hotshotco/Hotshot-XL">🃏 Model card</a>
-  &nbsp;
-  <a href="https://discord.gg/2FjCRRxHCz">💬 Discord</a>
-</h1>
+Utilization of the Hotshot-XL Model on the OPV2V Dataset
 
-<p align="center">
-  <img src="https://dvfx9cgvtgnyd.cloudfront.net/hotshot/image-gen/gif_e8a50e1e-0b2e-4ebc-8229-817703585405.gif" alt="a barbie doll smiling in kitchen, oven on fire, disaster, pink wes anderson vibes, cinematic" width="195px" height="111.42px"/>
-  &nbsp;
-  <img src="https://dvfx9cgvtgnyd.cloudfront.net/hotshot/image-gen/gif_f6ca56a3-30b8-4b2a-9342-111353e85b96.gif" alt="a teddy bear writing a letter" width="195px" height="111.42px"/>
-  &nbsp;
-  <img src="https://dvfx9cgvtgnyd.cloudfront.net/hotshot/image-gen/gif_6c219102-7f72-45e9-b4fa-b7a07c004ae1.gif" alt="dslr photo of mark zuckerberg happy, pulling on threads, lots of threads everywhere, laughing, hd, 8k" width="195px" height="111.42px"/>
-  &nbsp;
-  <img src="https://dvfx9cgvtgnyd.cloudfront.net/hotshot/image-gen/gif_2dd3c30f-42c5-4f37-8fa6-b2494fcac4b4.gif" alt="a cat laughing" width="195px" height="111.42px"/>
-  &nbsp;
-</p>
+In our recent endeavors, we have rigorously applied and evaluated the capabilities of the Hotshot-XL models on the OPV2V dataset. We extend our sincere gratitude to the creators of both the Hotshot-XL model and the OPV2V dataset for enabling this research. The original project can be found here: [Hotshot-XL](https://github.com/hotshotco/hotshot-xl). [OPV2V](https://github.com/DerrickXuNu/OpenCOOD)
+
+ 
+### Additional Changes:
+We have meticulously extracted front camera images from the OPV2V dataset and subsequently amalgamated them into frames, thereby creating a concise video that illustrates traffic scenarios within the CARLA simulator. Further, we employed fine_tune.py and inference.py scripts to rigorously test the capabilities of HotShot-XL in generating extended videos, with durations varying between 2 to 5 seconds per video. This process was aimed at evaluating HotShot-XL's proficiency in handling longer sequences and more complex dynamic environments.
+
+
+### Introduction:
+About OPV2V:
+OPV2V represents the forefront of large-scale Open Datasets for Perception with Vehicle-to-Vehicle (V2V) communication. It was meticulously assembled using a cooperative driving co-simulation framework, OpenCDA, alongside the CARLA simulator. This dataset encompasses a wide array of diverse scenarios, featuring various connected vehicles aimed at addressing complex driving challenges, particularly those involving severe occlusions.
+
+Key Features of OPV2V:
+
+Aggregated Sensor Data: Utilizes comprehensive sensor data collected from multiple connected automated vehicles.
+Extensive Scenario Coverage: Includes 73 diverse scenes across 6 road types and 9 cities.
+Rich Data Collection: Features 12K frames of LiDAR point clouds and RGB camera images, coupled with 230K annotated 3D bounding boxes.
+Comprehensive Benchmarks: Provides an extensive benchmark encompassing 4 LiDAR detectors and 4 distinct fusion strategies, cumulatively presenting 16 models.
 
 Hotshot-XL is an AI text-to-GIF model trained to work alongside [Stable Diffusion XL](https://stability.ai/stable-diffusion). 
 
@@ -245,20 +246,12 @@ There are lots of ways we are excited about improving Hotshot-XL. For example:
 
 We 💗 contributions from the open-source community! Please let us know in the issues or PRs if you're interested in working on these improvements or anything else!
 
-# 📚 BibTeX
-```
-@software{Mullan_Hotshot-XL_2023,
-  author = {Mullan, John and Crawbuck, Duncan and Sastry, Aakash},
-  license = {Apache-2.0},
-  month = oct,
-  title = {{Hotshot-XL}},
-  url = {https://github.com/hotshotco/hotshot-xl},
-  version = {1.0.0},
-  year = {2023}
-}
-```
 
-# 🙏 Acknowledgements
+### Copyright & Contact:
+The OPV2V dataset is a proprietary creation of UCLA Mobility Lab and is fully protected under copyright laws. All rights are reserved by the institution. For further inquiries or detailed information, the creators can be contacted at jiaqima@ucla.edu.
+
+As we continue to explore and expand upon the capabilities of the Hotshot-XL models using the OPV2V dataset, we are committed to adhering to all ethical guidelines, giving due credit, and upholding the principles of academic integrity.
+
 Text-to-Video models are improving quickly and the development of Hotshot-XL has been greatly inspired by the following amazing works and teams:
 
 - [SDXL](https://stability.ai/stable-diffusion)
@@ -268,3 +261,44 @@ Text-to-Video models are improving quickly and the development of Hotshot-XL has
 - [Imagen Video](https://imagen.research.google/video/)
 
 We hope that releasing this model/codebase helps the community to continue pushing these creative tools forward in an open and responsible way.
+
+### Original Work Details
+Hotshot-XL Project:
+
+Authors: John Mullan, Duncan Crawbuck, Aakash Sastry
+Version: 1.0.0, October 2023
+License: Apache-2.0 (Details below)
+URL: https://github.com/hotshotco/hotshot-xl
+
+OPV2V Dataset:
+
+Authors: Runsheng Xu, Hao Xiang, Xin Xia, Xu Han, Jinlong Li, Jiaqi Ma
+Published: 2022
+In: 2022 IEEE International Conference on Robotics and Automation (ICRA)
+Details: OPV2V represents a comprehensive Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication.
+URL: https://github.com/DerrickXuNu/OpenCOOD
+
+### Citation
+Please cite:
+@software{Hotshot-XL_2023,
+  title = {{Hotshot-XL}},
+  author = {Mullan, John and Crawbuck, Duncan and Sastry, Aakash},
+  month = oct,
+  year = {2023},
+  version = {1.0.0},
+  license = {Apache-2.0},
+  url = {https://github.com/hotshotco/hotshot-xl}
+}
+
+@inproceedings{xu2022opencood,
+  title = {OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication},
+  author = {Xu, Runsheng and Xiang, Hao and Xia, Xin and Han, Xu and Li, Jinlong and Ma, Jiaqi},
+  booktitle = {2022 IEEE International Conference on Robotics and Automation (ICRA)},
+  year = {2022}
+}
+
+## About the Maintainer
+- **Name:** Yuxuan Zhao
+- **Contact:** yz4397@columbia.edu
+- **Affiliation/Organization:** Columbia University
+
