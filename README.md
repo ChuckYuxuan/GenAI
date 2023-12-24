@@ -280,6 +280,7 @@ URL: https://github.com/DerrickXuNu/OpenCOOD
 
 ### Citation
 Please cite:
+```
 @software{Hotshot-XL_2023,
   title = {{Hotshot-XL}},
   author = {Mullan, John and Crawbuck, Duncan and Sastry, Aakash},
@@ -296,7 +297,7 @@ Please cite:
   booktitle = {2022 IEEE International Conference on Robotics and Automation (ICRA)},
   year = {2022}
 }
-
+```
 ## About the Maintainer
 - **Name:** Yuxuan Zhao
 - **Contact:** yz4397@columbia.edu
