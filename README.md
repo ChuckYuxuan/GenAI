@@ -49,6 +49,28 @@ virtualenv -p $(which python3) venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+### Download the Training Dataset
+Our training dataset is organized into multiple subfolders, each containing hundreds of frames and a text prompt that describes the scene. Follow these steps to download the dataset:
+1. **Access the Dataset:**
+   - Access all the data from the [Training Dataset Folder](https://drive.google.com/drive/folders/1xZTRrTwdB12A3XsEDtY_Z53aFORrTIlL) on Google Drive.
+2. **Download Individual Subfolders:**
+   - Inside the main folder, you will find subfolders for each scene. If you have a good internet connection, you can download these subfolders individually.
+3. **Handling Large Files:**
+   - In case you encounter issues with downloading large files, consider downloading smaller portions of the dataset.
+4. **Merging Segments (if applicable):**
+   - If the dataset is split into parts, merge them using the command line:
+     ```bash
+     cat scene_folder_name.zip.part* > scene_folder_name.zip
+     ```
+   - Replace `scene_folder_name` with the actual name of your scene's subfolder.
+   - Unzip the merged file with:
+     ```bash
+     unzip scene_folder_name.zip
+     ```
+5. **Post-Download:**
+   - After downloading and extracting, check that each scene folder contains all the frames and the associated text prompt.
+
+For any issues or assistance, please contact our support team.
 
 ### Download the Hotshot-XL Weights
 
@@ -299,7 +321,7 @@ Please cite:
 }
 ```
 ## About the Maintainer
-- **Name:** Yuxuan Zhao
-- **Contact:** yz4397@columbia.edu
+- **Name:** Yuxuan Zhao, Yuxiao Zheng
+- **Contact:** yz4397@columbia.edu, yz4364@columbia.edu
 - **Affiliation/Organization:** Columbia University
 
