@@ -223,7 +223,6 @@ accelerate launch fine_tune.py \
     --output_dir="<OUTPUT_DIR>" \
     --data_dir="fine_tune_dataset" \
     --report_to="wandb" \
-    --run_validation_at_start \
     --resolution=512 \
     --mixed_precision=fp16 \
     --train_batch_size=4 \
@@ -232,12 +231,10 @@ accelerate launch fine_tune.py \
     --lr_warmup_steps=0 \
     --max_train_steps=1000 \
     --save_n_steps=20 \
-    --validate_every_steps=50 \
     --vae_b16 \
     --gradient_checkpointing \
     --noise_offset=0.05 \
     --snr_gamma \
-    --test_prompts="man sits at a table in a cafe, he greets another man with a smile and a handshakes"
 ```
 
 # 📝 Further work
